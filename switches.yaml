@@ -36,7 +36,7 @@
         entity_id: remote.wohnzimmer
 - platform: template
   switches:
-    Airplay:
+    airplay:
       value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Airplay' }}"
       turn_on:
         service: remote.turn_on
