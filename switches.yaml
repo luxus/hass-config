@@ -10,3 +10,15 @@
       turn_off:
         service: remote.turn_off
         entity_id: remote.wohnzimmer
+- platform: template
+  switches:
+    AppleTV:
+      value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Apple Tv' }}"
+      turn_on:
+        service: remote.turn_on
+        entity_id: remote.wohnzimmer
+        data:
+          activity: '33286511'
+      turn_off:
+        service: remote.turn_off
+        entity_id: remote.wohnzimmer
