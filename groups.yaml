@@ -1,0 +1,20 @@
+devices:
+  name: Devices
+  entities:
+   - device_tracker.atv24
+   - device_tracker.aurora504c09
+   - device_tracker.fritzbox
+   - device_tracker.fritzrepeater
+   - device_tracker.harmonyhub
+   - device_tracker.hassio
+   - device_tracker.mrxserieset
+   - device_tracker.philipshue
+   - device_tracker.rockrobo
+   - device_tracker.wohnzimmer
+   - device_tracker.ipad172
+   - device_tracker.ps4pro
+
+peoples:
+  name: People
+  entities:
+    - device_tracker.ikai

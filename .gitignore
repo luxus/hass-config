@@ -1,3 +1,24 @@
+.homekit.state
+.ios.conf
+.google.token
+.remote-sync.json
+.uuid
+.config_entries.json
+secrets.yaml
+google_calendars.yaml
+home-assistant.log
+known_devices.yaml
+options.xml
+OZW_Log.txt
+phue-0017886e88c9.conf
+phue.conf
+plex.conf
+pyozw.sqlite
+zwcfg_0xe08db763.xml
+zwscene.xml
+harmony_wohnzimmer.conf
+entity_registry.yaml
+.HA_VERSION
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

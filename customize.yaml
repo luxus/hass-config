@@ -1,0 +1,42 @@
+zwave.aeotec_zw096_smart_switch_6: {}
+light.deckenlampe_2: {}
+light.go: {}
+light.livingcolors_2: {}
+light.schrankstrahler:
+  homebridge_visible: true
+light.tischlampe:
+  homebridge_visible: true
+light.stehlampe:
+  homebridge_visible: false
+light.deckenlampe: {}
+light.hgrp0000000254:
+  hidden: true
+light.zimmer:
+  hidden: true
+sun.sun:
+  hidden: true
+light.esstisch_1: {}
+light.esstisch_2: {}
+light.esstisch_3: {}
+switch.aeotec_zw096_smart_switch_6_switch:
+  homebridge_visible: 'true'
+light.esstisch:
+  homebridge_visible: 'true'
+sensor.aeotec_zw096_smart_switch_6_current_2:
+  hidden: true
+sensor.unknown:
+  hidden: true
+sensor.aeotec_zw096_smart_switch_6_power_2:
+  hidden: true
+sensor.aeotec_zw096_smart_switch_6_voltage_2:
+  hidden: true
+sensor.aeotec_zw096_smart_switch_6_previous_reading_2:
+  hidden: true
+device_tracker.yeelinklightcolor1miio48257870:
+  hidden: true
+device_tracker.yeelinklightcolor1miio46036398:
+  hidden: true
+device_tracker.yeelinklightcolor1miio48255113:
+  hidden: true
+device_tracker.hassio_2:
+  hidden: true

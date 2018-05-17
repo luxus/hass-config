@@ -1,0 +1,12 @@
+- platform: template
+  switches:
+    playstation:
+      value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Playstation' }}"
+      turn_on:
+        service: remote.turn_on
+        entity_id: remote.wohnzimmer
+        data:
+          activity: '33286722'
+      turn_off:
+        service: remote.turn_off
+        entity_id: remote.wohnzimmer
