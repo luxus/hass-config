@@ -16,7 +16,6 @@ plex.conf
 pyozw.sqlite
 zwcfg_0xe08db763.xml
 zwscene.xml
-harmony_wohnzimmer.conf
 entity_registry.yaml
 .HA_VERSION
 # Byte-compiled / optimized / DLL files

@@ -22,3 +22,51 @@
       turn_off:
         service: remote.turn_off
         entity_id: remote.wohnzimmer
+- platform: template
+  switches:
+    appletv:
+      value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Apple Tv' }}"
+      turn_on:
+        service: remote.turn_on
+        entity_id: remote.wohnzimmer
+        data:
+          activity: '33286511'
+      turn_off:
+        service: remote.turn_off
+        entity_id: remote.wohnzimmer
+- platform: template
+  switches:
+    Airplay:
+      value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Airplay' }}"
+      turn_on:
+        service: remote.turn_on
+        entity_id: remote.wohnzimmer
+        data:
+          activity: '33514721'
+      turn_off:
+        service: remote.turn_off
+        entity_id: remote.wohnzimmer
+- platform: template
+  switches:
+    computer:
+      value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Computer' }}"
+      turn_on:
+        service: remote.turn_on
+        entity_id: remote.wohnzimmer
+        data:
+          activity: '33286971'
+      turn_off:
+        service: remote.turn_off
+        entity_id: remote.wohnzimmer
+- platform: template
+  switches:
+    bluray:
+      value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Blu-Ray' }}"
+      turn_on:
+        service: remote.turn_on
+        entity_id: remote.wohnzimmer
+        data:
+          activity: '33514530'
+      turn_off:
+        service: remote.turn_off
+        entity_id: remote.wohnzimmer
