@@ -22,11 +22,11 @@ homekit:
   filter:
     exclude_domains:
       - light
-      - switch
       - sensor
+      - device_tracker
     include_entities:
       - light.Esstisch
-      - switch.switch
+      - device_tracker.ikai
 # Enables the frontend
 frontend:
 map:
