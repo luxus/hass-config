@@ -112,6 +112,10 @@ media_player:
 #    host: 192.168.188.47
 device_tracker:
   - platform: fritz
+    new_device_defaults:
+      track_new_devices: False
+      hide_if_away: False
+
 #device_sun_light_trigger:
 #  device_group: group.peoples
 #  light_profile: relax
