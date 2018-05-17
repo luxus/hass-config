@@ -24,6 +24,7 @@ homekit:
       - light
       - sensor
       - device_tracker
+      - remote
     include_entities:
       - light.Esstisch
       - device_tracker.ikai
