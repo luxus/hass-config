@@ -80,14 +80,6 @@ light:
   - platform: nanoleaf_aurora
     host: 192.168.188.41
     token: !secret nanoleaf_token
-
-# Weather Prediction
-sensor:
-  platform: darksky
-  api_key: !secret darksky_api_key
-  monitored_conditions:
-    - temperature
-    - hourly_summary
 zwave:
   usb_path: /dev/ttyS0
   network_key: !secret zwave_network_key
@@ -123,3 +115,4 @@ switch: !include switches.yaml
 group: !include groups.yaml
 automation: !include automations.yaml
 automation old: !include automations_old.yaml
+sensor: !include sensors.yaml
