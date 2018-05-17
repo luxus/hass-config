@@ -1,7 +1,6 @@
 - platform: template
   switches:
     playstation:
-      name: PS4
       value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Playstation' }}"
       turn_on:
         service: remote.turn_on
@@ -14,7 +13,6 @@
 - platform: template
   switches:
     appletv:
-      name: "Apple TV"
       value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Apple Tv' }}"
       turn_on:
         service: remote.turn_on
