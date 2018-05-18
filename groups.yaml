@@ -22,15 +22,4 @@ peoples:
 flowers:
   name: Flowers
   entities:
-    - sensor.flora1_temperature
-    - sensor.flora1_moisture
-    - sensor.flora1_light_intensity
-    - sensor.flora1_conductivity
-    - sensor.flora2_temperature
-    - sensor.flora2_moisture
-    - sensor.flora2_light_intensity
-    - sensor.flora2_conductivity
-    - sensor.flora3_temperature
-    - sensor.flora3_moisture
-    - sensor.flora3_light_intensity
-    - sensor.flora3_conductivity
+    - group.all_plants
