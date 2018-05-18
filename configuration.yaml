@@ -127,3 +127,4 @@ group: !include groups.yaml
 automation: !include automations.yaml
 automation old: !include automations_old.yaml
 sensor: !include sensors.yaml
+plant: !include plants.yaml
