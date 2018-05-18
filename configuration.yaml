@@ -46,7 +46,18 @@ http:
   ssl_key: /ssl/privkey.pem
   # Uncomment this if you are using SSL or running in Docker etc
   base_url: !secret base_url
-
+recorder:
+  purge_keep_days: 5
+ # db_url: sqlite:////home/user/.homeassistant/test
+  exclude:
+    domains:
+      - automation
+      - weblink
+      - updater
+    entities:
+      - sun.sun # Don't record sun data
+  #    - sensor.last_boot # Comes from 'systemmonitor' sensor platform
+   #   - sensor.date
 updater:
 ios:
 notify:
