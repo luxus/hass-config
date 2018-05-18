@@ -1,0 +1,14 @@
+- platform: miflora
+  mac: "C4:7C:8D:66:37:C1"
+  name: "Flower 1"
+- platform: miflora
+  mac: "C4:7C:8D:66:37:C2"
+  name: "Flower 2"
+- platform: miflora
+  mac: "C4:7C:8D:66:35:7F"
+  name: "Flower 3"
+- platform: darksky
+  api_key: !secret darksky_api_key
+  monitored_conditions:
+    - temperature
+    - hourly_summary
