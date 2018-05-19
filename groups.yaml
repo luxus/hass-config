@@ -22,4 +22,12 @@ peoples:
 flowers:
   name: Flowers
   entities:
-    - group.all_plants
+    - plant.basilikum
+    - plant.dracaenafragrans
+    - plant.dypsislutescens
+    
+weather:
+  name: Wetter
+  entities:
+    - sensor.dark_sky_hourly_summary
+    - sensor.dark_sky_temperature
