@@ -31,6 +31,7 @@ homekit:
       - sensor.master_bed_room_temperature
 # Enables the frontend
 frontend:
+  javascript_version: es5
 map:
 # Enables configuration UI
 config:
