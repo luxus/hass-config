@@ -27,7 +27,8 @@ homekit:
       - remote
     include_entities:
       - light.Esstisch
-      - device_tracker.ikai
+      - sensor.flora1_temperature
+      - sensor.master_bed_room_temperature
 # Enables the frontend
 frontend:
 map:
@@ -47,7 +48,7 @@ http:
   # Uncomment this if you are using SSL or running in Docker etc
   base_url: !secret base_url
 recorder:
-  purge_keep_days: 5
+  purge_keep_days: 60
  # db_url: sqlite:////home/user/.homeassistant/test
   exclude:
     domains:
