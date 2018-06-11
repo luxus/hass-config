@@ -28,7 +28,7 @@ homekit:
     include_entities:
       - light.Esstisch
       - sensor.flora1_temperature
-      - sensor.master_bed_room_temperature
+      - sensor.master_bedroom_temperature
 # Enables the frontend
 frontend:
 map:
