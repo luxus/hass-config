@@ -134,3 +134,7 @@ dyson:
   username: luxuspur@gmail.com
   password: !secret dyson
   language: DE
+lock:
+  - platform: nuki
+    host: 192.168.188.43
+    token: !secret nuki
