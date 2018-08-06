@@ -134,3 +134,6 @@ dyson:
   username: luxuspur@gmail.com
   password: !secret dyson
   language: DE
+  devices:
+    - device_id: NN4-CH-KDA1305A
+      device_ip: 192.168.188.62
