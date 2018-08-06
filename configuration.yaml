@@ -137,3 +137,10 @@ dyson:
   devices:
     - device_id: NN4-CH-KDA1305A
       device_ip: 192.168.188.62
+lock:
+  - platform: nuki
+    host: 192.168.188.43
+    token: !secret nuki
+  - platform: nello
+    username: luxuspur@me.com
+    password: !secret nello
