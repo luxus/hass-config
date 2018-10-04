@@ -26,7 +26,7 @@ homekit:
       - device_tracker
       - remote
     include_entities:
-      - light.Esstisch
+      - light.Diningtable
       - sensor.flora1_temperature
       - sensor.master_bedroom_temperature
 # Enables the frontend
@@ -78,17 +78,17 @@ light:
   - platform: yeelight
     devices:
       192.168.188.34:
-        name: Esstisch 1
+        name: Diningtable 1
       192.168.188.23:
-        name: Esstisch 2
+        name: Diningtable 2
       192.168.188.54:
-        name: Esstisch 3
+        name: Diningtable 3
   - platform: group
-    name: Esstisch
+    name: Diningtable
     entities:
-      - light.esstisch_1
-      - light.esstisch_2
-      - light.esstisch_3
+      - light.diningtable_1
+      - light.diningtable_2
+      - light.diningtable_3
   - platform: nanoleaf_aurora
     host: 192.168.188.41
     token: !secret nanoleaf_token
@@ -101,7 +101,7 @@ google:
 
 remote:
   - platform: harmony
-    name: Wohnzimmer
+    name: Livingroom
     host: 192.168.188.31
 
 history:
@@ -144,3 +144,7 @@ lock:
   - platform: nello
     username: luxuspur@me.com
     password: !secret nello
+ vacuum:
+  - platform: xiaomi_miio
+    host: 192.168.1.2
+    token: YOUR_TOKEN
