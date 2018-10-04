@@ -146,5 +146,5 @@ lock:
     password: !secret nello
 vacuum:
  - platform: xiaomi_miio
-   host: 192.168.1.2
+   host: 192.168.188.36
    token: !secret xiaomi_token
