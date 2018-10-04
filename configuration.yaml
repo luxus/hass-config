@@ -144,7 +144,7 @@ lock:
   - platform: nello
     username: luxuspur@me.com
     password: !secret nello
- vacuum:
-  - platform: xiaomi_miio
-    host: 192.168.1.2
-    token: YOUR_TOKEN
+vacuum:
+ - platform: xiaomi_miio
+   host: 192.168.1.2
+   token: !secret xiaomi_token
