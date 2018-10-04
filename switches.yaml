@@ -1,72 +1,83 @@
 - platform: template
   switches:
     playstation:
-      value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Playstation' }}"
+      value_template: "{{ states.remote.Livingroom.attributes.current_activity == 'Playstation' }}"
       turn_on:
         service: remote.turn_on
-        entity_id: remote.wohnzimmer
+        entity_id: remote.Livingroom
         data:
           activity: '33286722'
       turn_off:
         service: remote.turn_off
-        entity_id: remote.wohnzimmer
+        entity_id: remote.Livingroom
 - platform: template
   switches:
     appletv:
-      value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Apple Tv' }}"
+      value_template: "{{ states.remote.Livingroom.attributes.current_activity == 'Apple Tv' }}"
       turn_on:
         service: remote.turn_on
-        entity_id: remote.wohnzimmer
+        entity_id: remote.Livingroom
         data:
           activity: '33286511'
       turn_off:
         service: remote.turn_off
-        entity_id: remote.wohnzimmer
+        entity_id: remote.Livingroom
 - platform: template
   switches:
     appletv:
-      value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Apple Tv' }}"
+      value_template: "{{ states.remote.Livingroom.attributes.current_activity == 'Apple Tv' }}"
       turn_on:
         service: remote.turn_on
-        entity_id: remote.wohnzimmer
+        entity_id: remote.Livingroom
         data:
           activity: '33286511'
       turn_off:
         service: remote.turn_off
-        entity_id: remote.wohnzimmer
+        entity_id: remote.Livingroom
 - platform: template
   switches:
     airplay:
-      value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Airplay' }}"
+      value_template: "{{ states.remote.Livingroom.attributes.current_activity == 'Airplay' }}"
       turn_on:
         service: remote.turn_on
-        entity_id: remote.wohnzimmer
+        entity_id: remote.Livingroom
         data:
           activity: '33514721'
       turn_off:
         service: remote.turn_off
-        entity_id: remote.wohnzimmer
+        entity_id: remote.Livingroom
 - platform: template
   switches:
     computer:
-      value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Computer' }}"
+      value_template: "{{ states.remote.Livingroom.attributes.current_activity == 'Computer' }}"
       turn_on:
         service: remote.turn_on
-        entity_id: remote.wohnzimmer
+        entity_id: remote.Livingroom
         data:
           activity: '33286971'
       turn_off:
         service: remote.turn_off
-        entity_id: remote.wohnzimmer
+        entity_id: remote.Livingroom
 - platform: template
   switches:
     bluray:
-      value_template: "{{ states.remote.wohnzimmer.attributes.current_activity == 'Blu-Ray' }}"
+      value_template: "{{ states.remote.Livingroom.attributes.current_activity == 'Blu-Ray' }}"
       turn_on:
         service: remote.turn_on
-        entity_id: remote.wohnzimmer
+        entity_id: remote.Livingroom
         data:
           activity: '33514530'
       turn_off:
         service: remote.turn_off
-        entity_id: remote.wohnzimmer
+        entity_id: remote.Livingroom
+ - platform: template
+   switches:
+     walter_vacuum:
+       friendly_name: Walter
+       value_template: "{{ is_state('vacuum.xiaomi_vacuum_cleaner', 'cleaning') }}"
+       turn_on:
+       - service: vacuum.start
+         entity_id: vacuum.xiaomi_vacuum_cleaner
+       turn_off:
+       - service: vacuum.return_to_base
+         entity_id: vacuum.xiaomi_vacuum_cleaner
